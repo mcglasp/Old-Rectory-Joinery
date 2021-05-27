@@ -7,10 +7,10 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="assets/style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-  <header><h1>Old Rectory Joinery</h1>
+  <header class="container px-5"><h1>Old Rectory Joinery</h1>
   <hr/>
 <ul class="nav justify-content-center">
   <li class="nav-item">
@@ -29,26 +29,45 @@
 
 </header>
     <main>
-      <div class="container container-fluid content-border">
+      <div class=" px-5 container container-fluid content-border">
         <div class="row">
-          <div id="hero"><h2 class="p-3 position-absolute bottom-0 start-0 transparent">Fully bespoke, handmade furniture</h2></div>
+          <div id="hero" class="col-sm-12 col-md-12"><h2 class="p-3 position-absolute bottom-0 start-0 transparent">Fully bespoke, handmade furniture</h2></div>
         </div>
       </div>
       <div class="container container-fluid content-border">
-        <div class="row g-2">
-          <div class="col-4">
-          <div id="home-pic-1"></div>
-          </div>
-          <div class="col-4">
-          <div id="home-pic-2"></div>
-          </div>
-          <div class="col-4">
-          <div id="home-pic-3"></div>
+        <div class="row g-2 justify-content-center">
+          <div class="col-md-3 col-sm-4 col-xs-6 justify-content-center">
+          <div id="home-pic-1""></div></div>
+          <div class="col-md-3 col-sm-4  col-xs-6 justify-content-center">
+          <div id="home-pic-2"></div></div>
+          <div class="col-md-3 col-sm-4  col-xs-6 justify-content-center">
+          <div id="home-pic-3"></div></div>
         </div>
         </div>
-      </div>
+      
+      <!-- modify this form HTML and place wherever you want your form -->
+            <div class="container container-fluid content-border">
+        <div class="row g-2 justify-content-center">
+          <div class="col-md-8 col-sm-12">
+<form action="https://formspree.io/f/mzbyrdqe"
+  method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="_replyto">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group ">
+    <label for="exampleFormControlTextarea1" class="pt-3">Your message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+  </div>
+  <button type="submit" class="m-3 btn btn-light">Send</button>
+</form>
+
+</div>
+</div>
+</div>
       </main>
-    <footer><p>copyright Old Rectory Joinery</p></footer>
+    <footer class="d-flex justify-content-center"><p>&copy; Old Rectory Joinery</p></footer>
     <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
