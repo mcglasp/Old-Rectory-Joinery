@@ -29,6 +29,16 @@ h1 {
   font-size: 3rem;
 }
 
+h3 {
+  font-family:'Cormorant Garamond', serif;
+
+}
+
+.card {
+  background-color: rgba(223, 222, 222, 0.178);
+  border: none;
+}
+
 hr {
   display: flex;
   align-self: center;
@@ -55,12 +65,11 @@ hr {
 }
 
 #hero {
-background-image: url("img/hero_bookcase.jpg");
+background-image: url("img/front_door.jpg");
     background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 96%;
-
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -128,4 +137,10 @@ background-image: url("img/hero_bookcase.jpg");
   }
 }
 
+form button.btn-light {
+  background-color: #fff;
+}
 
+.form-control {
+  border: none;
+}
