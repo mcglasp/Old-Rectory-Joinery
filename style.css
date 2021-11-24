@@ -1,16 +1,14 @@
-body{
+body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-color: #333;
-background-color: rgba(223, 222, 222, 0.178);
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: rgba(223, 222, 222, 0.178);
 }
 
 a {
   text-decoration: none;
 }
-
-
 
 .transparent {
   background-color: rgba(223, 222, 222, 0.8);
@@ -23,15 +21,15 @@ header {
 }
 
 h1 {
-  font-family:'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   text-align: center;
   font-weight: 400;
   font-size: 3rem;
+  letter-spacing: -1px;
 }
 
 h3 {
-  font-family:'Cormorant Garamond', serif;
-
+  font-family: "Cormorant Garamond", serif;
 }
 
 .card {
@@ -54,9 +52,10 @@ hr {
 .content-border {
   padding: 20px;
   border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
   background: #fff;
 }
+
+
 
 #maintext {
   background-color: #000;
@@ -64,75 +63,40 @@ hr {
   margin-bottom: 20px;
 }
 
-#hero {
-background-image: url("img/front_door.jpg");
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 96%;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: block;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 0 auto;
- height: 70vh;
+.carousel {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  height: 80vh;
 }
 
-#home-pic-1 {
-    background-image: url("img/IMG_2833 copy.jpg");
-    background-position: 70%;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 0px;
-    height: 50vh;
-
+.carousel-item {
+  width: 100%;
+  height: 80vh; /* example */
 }
 
-#home-pic-2 {
-    background-image: url("img/wine_cooler.JPG");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 0px;
-    height: 50vh;
-    /* margin: 10px; */
-    }
+.carousel-item img:not(.spice) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-#home-pic-3 {
-    background-image: url("img/PHOTO-2021-03-16-17-07-06.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 0px;
-    height: 50vh;
-    }
+.spice {
+  height: 120%;
+  position: relative;
+  bottom: 10%;
+  object-fit: cover;
+}
 
-    @media screen and (max-width: 576px) {
-  #home-pic-1, #home-pic-2, #home-pic-3 {
+.inline-images {
+  /* box-sizing: border-box; */
+  border: 1px solid rgb(223, 222, 222);
+}
+
+@media screen and (max-width: 576px) {
+  #home-pic-1,
+  #home-pic-2,
+  #home-pic-3 {
     max-height: 20vh;
   }
 }
@@ -143,4 +107,8 @@ form button.btn-light {
 
 .form-control {
   border: none;
+}
+
+#contact-form {
+  height: 80vh!important;
 }
