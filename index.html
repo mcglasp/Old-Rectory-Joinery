@@ -5,10 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Old Rectory Joinery</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Roboto:wght@100&display=swap" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -17,14 +19,14 @@
         <hr />
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link menu-grey" aria-current="page">Page Under Construction</a>
+                <a class="nav-link menu-grey" href="#about" aria-current="page">About</a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link menu-grey" href="#">Check back soon for more information and photographs</a>
-            </li> -->
-            <!-- <li class="nav-item">
-                <a class="nav-link menu-grey" href="#">Gallery</a>
-            </li> -->
+            <li class="nav-item">
+                <a class="nav-link menu-grey" href="#featured-project">Recent projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link menu-grey" href="#gallery">Gallery</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link menu-grey" href="#contact-form" tabindex="-1" aria-disabled="true">Contact</a>
             </li>
@@ -34,10 +36,13 @@
         <div class="container content-border">
             <div class="row">
                 <div class="col align-self-center">
-                    <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/front_door.jpg" alt="First slide">
+                            <div class="carousel-item active" data-bs-interval="3500">
+                                <img class="d-block w-100" src="img/old_rectory_joinery_front_door.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3500">
+                                <img class="d-block w-100" src="img/old_rectory_joinery_books_in_case.jpg" alt="First slide">
                             </div>
                             <h2 class="p-3 position-absolute bottom-0 end-0 transparent">
                                 Fully bespoke, handmade furniture & doors
@@ -48,23 +53,117 @@
             </div>
         </div>
         <div class="container content-border">
-            <div class="row pt-1 pb-1 ">
+            <div class="row pt-1 pb-1">
                 <div class="col-md-4 col-sm-12">
-                    <img class="p-1 d-block w-100 inline-images" src="img/inside_door.png">
+                    <img class="p-1 d-block w-100 inline-images" src="img/old_rectory_joinery_inside_door.png">
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <img class="p-1 d-block w-100 inline-images" src="img/g_m_cabinet_closeup.jpg">
+                    <img class="p-1 d-block w-100 inline-images" src="img/old_rectory_joinery_g_m_cabinet_closeup.jpg">
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="ba-container">
-                        <img class="p-1 d-block w-100 spice-image-1 inline-images" src="img/door_open.jpg" alt="">
-                        <img class="p-1 d-block w-100 spice-image-2 inline-images" src="img/door_close.jpg" alt="">
+                        <img class="p-1 d-block w-100 spice-image-1 inline-images" src="img/old_rectory_joinery_condiment_cabinet_door_open.jpg" alt="">
+                        <img class="p-1 d-block w-100 spice-image-2 inline-images" src="img/old_rectory_joinery_condiment_cabinet_door_close.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container content-border">
+            <div id="featured-project" class="card p-3">
+                <div class="card-body">
+                    <h3>Featured project — Stamford whiskey bar</h3>
+                    <p><em>
+                        Large, built-in whiskey bar with integrated wine fridges and cedar-wood humidor. Integral LED lighting and antique mirror glass.</em></p>
+                        <div class="overlay-container">
+                            <div id="whiskey-overlay" class="p-3">
+                            <img id="whiskey-cad" src="img/old_rectory_joinery_whiskey_bar_cad.jpg" style="filter: opacity(0.5)" class="w-75 d-block p-1 mx-auto" alt="...">
+                        </div>
+                        <div id="whiskey-humidor" class="row pt-1 pb-1 justify-content-center">
+                        <div class="col-lg-5 ">
+                        <img id="integrated-wine" src="img/old_rectory_joinery_whiskey_bar_progress_1.jpg" class="w-100 inline-images d-block p-1 mt-1" alt="...">
+                    </div>
+                    <div class="whiskey-detail-col col-lg-4">
+                        <img id="whiskey-bar" src="img/old_rectory_joinery_whiskey_bar_close_angle.JPG" class="p-1 d-block w-100 inline-images" alt="...">
+
+                    </div>
+                        <div id="humidor" class="col-lg-3">
+                            <img src="img/old_rectory_joinery_humidor.JPG" class="w-100 inline-images d-block p-1 mb-1" alt="...">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        </div>
+    </div>
+            <div id="gallery" class="container content-border">
+                <div class="row pt-1 pb-1 justify-content-md-center align-self-center align-items-end">
+                    <div class="col-md-3 col-sm-6 align-items-end">
+                        <img src="img/old_rectory_joinery_hero_bookcase.jpg" onclick="openModal();currentSlide(1)" class="w-100 inline-images d-block p-1 mt-1" alt="...">
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="img/old_rectory_joinery_st_marys_door.jpg" onclick="openModal();currentSlide(2)" class="w-100 inline-images d-block p-1 mt-1" alt="...">
+                    </div>
+                    <div class="col-md-3 col-sm-6 ">
+                        <img src="img/old_rectory_joinery_basement_cupboards.jpg" onclick="openModal();currentSlide(3)" class="w-100 inline-images d-block p-1 mt-1" alt="...">
+                    </div>
+                    <div class="row pt-1 pb-1 justify-content-md-center align-self-center">
+                        <div class="col-md-2 col-sm-6">
+                            <img src="img/old_rectory_joinery_dog.jpeg" onclick="openModal();currentSlide(4)" class="w-100 inline-images d-block p-1 mt-1" alt="...">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <img src="img/old_rectory_joinery_wine_cooler.jpg" onclick="openModal();currentSlide(5)" class="w-100 inline-images d-block p-1 mt-1" alt="...">
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <img src="img/old_rectory_joinery_ply_cupboard.jpg" onclick="openModal();currentSlide(6)" class="w-100 inline-images d-block p-1 mt-1" alt="...">
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <img src="img/old_rectory_joinery_lights.jpg" onclick="openModal();currentSlide(7)" class="w-100 inline-images d-block p-1 mt-1" alt="...">
+                        </div>
+                          <!-- The Modal/Lightbox -->
+<div id="myModal" class="non-bs-modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="numbertext">1 / 7</div>
+        <img class="slide" src="img/old_rectory_joinery_hero_bookcase.jpg" style="height: 70vh; display: flex; justify-content: center;" alt="Bookcase — made to match kitchen mouldings.">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 7</div>
+        <img class="slide" src="img/old_rectory_joinery_st_marys_door.jpg" style="height: 70vh; display: flex;justify-content: center;" alt="Refurbishment of original Georgian door, Stamford.">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 7</div>
+        <img class="slide" src="img/old_rectory_joinery_basement_cupboards.jpg" style="height: 70vh; display: flex;justify-content: center;" alt="Basement fitted utility room.">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4 / 7</div>
+        <img class="slide" src="img/old_rectory_joinery_dog.jpeg" style="height: 70vh; display: flex;justify-content: center;" alt="Old Rectory dog.">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 7</div>
+        <img class="slide" src="img/old_rectory_joinery_wine_cooler.jpg" style="height: 70vh; display: flex;justify-content: center;" alt="Bespoke wine storage and cooler.">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 7</div>
+        <img class="slide" src="img/old_rectory_joinery_ply_cupboard.jpg" style="height: 70vh; display: flex;justify-content: center;" alt="Bespoke-built cupboard made to customer's design.">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">7 / 7</div>
+        <img class="slide" src="img/old_rectory_joinery_lights.jpg" style="height: 70vh; display: flex;justify-content: center;" alt="Integrated lighting.">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>    </div>
+  </div>
+                    </div>
+                </div>
+            </div>
+
+
         <div id="contact-form" class="container content-border">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-sm-12">
@@ -90,13 +189,52 @@
             </div>
         </div>
     </main>
+  
     <footer class="d-flex justify-content-center content-border">
         <p>&copy; Old Rectory Joinery</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</script>
+<script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var slideAlt = document.getElementsByClassName("slide");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "flex";
+      slides[slideIndex-1].style.justifyContent = "center";
+      captionText.innerHTML = slideAlt[slideIndex].alt;
+    }
     </script>
     <script>
         $(document).ready(function() {
