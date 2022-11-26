@@ -311,10 +311,6 @@ form button.btn-light {
   margin: 0;
 }
 
-/* img.slide {
-  opacity: 0.6;
-} */
-
 .active,
 .demo:hover {
   opacity: 1;
@@ -326,4 +322,10 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 992px) {
+  #whiskey-cad {
+    filter: opacity(1);
+  }
 }
